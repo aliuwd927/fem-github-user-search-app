@@ -5,10 +5,16 @@
 }
 
 body {
-  min-height: 100vh;
+  height: 100vh;
+  width: 100vw;
   background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .App {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -72,29 +78,7 @@ body {
   gap: 25px;
 }
 
-/* RIGHT SIDE CONTAINER BEGIN*/
-.UserProfileInformationContainer {
-  display: flex;
-  height: 100%;
-  width: 75%;
-  flex-direction: column;
-  justify-content: center;
-  gap: 20px;
-}
-.UserProfile_Header {
-  display: flex;
-  flex-direction: row;
-  gap: 100px;
-}
-/*RIGHT SIDE CONTAINER END*/
-
 /*LEFT SIDE CONTAINER BEGIN*/
-.UserProfile_RepoFollow {
-  display: flex;
-  flex-direction: row;
-  gap: 100px;
-}
-
 .UserProfilePictureContainer {
   height: 100%;
   width: 25%;
@@ -110,3 +94,26 @@ body {
   border-radius: 50%;
 }
 /*LEFT SIDE CONTAINER END*/
+
+/* RIGHT SIDE CONTAINER BEGIN*/
+.UserProfileInformationContainer {
+  display: flex;
+  height: 100%;
+  width: 75%;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.UserProfile_RepoFollow {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+
+.UserProfile_Header {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+/*RIGHT SIDE CONTAINER END*/
