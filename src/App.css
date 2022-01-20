@@ -7,49 +7,56 @@
 body {
   height: 100vh;
   width: 100vw;
-  background-color: #f2f2f2;
+  background-color: #f6f8ff;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .App {
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 15px;
 }
+
 .TopSection {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 730px;
-  border: 1px;
-  border-style: solid;
-  border-color: red;
+  padding: 1rem;
 }
 
 .LightOrDarkToggle {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
+
+.SunAndMoon {
+  width: 20px;
+  height: 20px;
+}
+
 .MidSection {
   background-color: #ffffff;
   display: flex;
   flex-direction: row;
+  align-items: center;
   width: 730px;
-  border: 1px;
-  border-style: solid;
-  border-color: black;
-}
-
-.inputContainer {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+  height: 69px;
+  padding: 1rem;
+  gap: 10px;
 }
 
 .search {
+  width: 254px;
+  height: 25px;
   border: none;
   border-color: transparent;
   outline: none;
@@ -59,9 +66,15 @@ body {
 .searchButton {
   background-color: #0079ff;
   color: #ffffff;
-  position: relative;
-  right: 43px;
+  width: 106px;
+  height: 50px;
+  border-color: transparent;
   border-radius: 10px;
+}
+
+.IconSearch {
+  width: 24px;
+  height: 24px;
 }
 
 .BottomSection {
@@ -72,19 +85,14 @@ body {
   align-items: center;
   height: 420px;
   width: 730px;
-  border: 1px;
-  border-style: solid;
-  border-color: blue;
   gap: 25px;
 }
 
 /*LEFT SIDE CONTAINER BEGIN*/
+
 .UserProfilePictureContainer {
   height: 100%;
   width: 25%;
-  border: 1px;
-  border-style: solid;
-  border-color: red;
 }
 
 .UserProfilePicture_117 {
@@ -93,9 +101,11 @@ body {
   left: 25px;
   border-radius: 50%;
 }
+
 /*LEFT SIDE CONTAINER END*/
 
 /* RIGHT SIDE CONTAINER BEGIN*/
+
 .UserProfileInformationContainer {
   display: flex;
   height: 100%;
@@ -116,4 +126,26 @@ body {
   flex-direction: row;
   gap: 100px;
 }
+
+.UserProfile_LocationSocialMedia_Container {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+
+.UserProfile_LocationSocialMedia_Left,
+.UserProfile_LocationSocialMedia_Right {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.UserProfile_LocationSocialMedia_Location,
+.UserProfile_LocationSocialMedia_Website,
+.UserProfile_LocationSocialMedia_Twitter,
+.UserProfile_LocationSocialMedia_Company {
+  display: flex;
+  flex-direction: row;
+}
+
 /*RIGHT SIDE CONTAINER END*/
