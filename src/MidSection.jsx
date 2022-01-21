@@ -1,5 +1,4 @@
 import React from "react";
-import {useState} from 'react';
 import IconSearch from './assets/icon-search.svg';
 
 function MidSection({userData,sendUserData}){
