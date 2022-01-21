@@ -8,9 +8,6 @@ function App() {
 
 const [userDataState, setUserDataState] = useState({}); 
 
-//Checks to see if userDataState is empty or has an Object
-//console.log(userDataState);
-
   return (
     <div className="App">
       <TopSection/>

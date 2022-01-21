@@ -3,7 +3,7 @@ import {useState} from 'react';
 import IconSearch from './assets/icon-search.svg';
 
 function MidSection({userData,sendUserData}){
-  //console.log({userData}, {sendUserData});
+  
   const [userName,setUserName] = useState('');
 
   const API_URL = 'https://api.github.com/users/';
