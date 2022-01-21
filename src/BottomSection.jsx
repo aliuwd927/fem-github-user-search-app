@@ -4,7 +4,8 @@ import CompanyImg from "./assets/icon-company.svg";
 import WebsiteImg from "./assets/icon-website.svg";
 import TwitterImg from "./assets/icon-twitter.svg";
 
-function BottomSection(){
+function BottomSection({userData}){
+  //console.log(userData.name)
   return(
     <div className="BottomSection">
     {/*LEFT SIDE */}

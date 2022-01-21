@@ -3,6 +3,7 @@ import DarkThemeImg from './assets/icon-moon.svg';
 import LightThemeImg from './assets/icon-sun.svg';
 
 function TopSection(){
+
   return(
     <div className = "TopSection">
       <div className ="textHolder">
