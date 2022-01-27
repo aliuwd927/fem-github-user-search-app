@@ -32,6 +32,10 @@ function MidSection({userData,sendUserData}){
       //send data to our closest common parent
       //common parents is going to be APP
       sendUserData(data);
+    }else if(response.status === 404){
+      //If 404, send empty object
+      //This will trigger default render
+      sendUserData({});
     }
     
     
@@ -48,7 +52,6 @@ function MidSection({userData,sendUserData}){
         />
         <button className ="searchButton" 
         onClick={fetchUserInfo}
-        //onClick = {sendData}
         >
           search</button>
     </div>

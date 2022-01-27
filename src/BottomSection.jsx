@@ -4,8 +4,22 @@ import CompanyImg from "./assets/icon-company.svg";
 import WebsiteImg from "./assets/icon-website.svg";
 import TwitterImg from "./assets/icon-twitter.svg";
 
+
 function BottomSection({userData}){
   console.log(Object.keys(userData).length);
+  console.log(userData);
+
+  const renderStockProfile = () =>{
+    return(
+      <img src="https://via.placeholder.com/117" alt="" title="profile_picture" className = 'UserProfilePicture_117'/>
+    )
+  }
+
+  const renderUserProfile = () => {
+    return(
+      <img src={userData.avatar_url} alt="" title="profile_picture" className = 'UserProfilePicture_117'/>
+    )
+  }
 
   const ifshitnotvalid =()=>{
 
@@ -131,7 +145,7 @@ function BottomSection({userData}){
     <div className="BottomSection">
     {/*LEFT SIDE */}
       <div className ='UserProfilePictureContainer'>
-        <img src="https://via.placeholder.com/117" alt="" title="profile_picture" className = 'UserProfilePicture_117'/>
+      {Object.keys(userData).length === 0 ? renderStockProfile() : renderUserProfile()}
       </div>
 
 
