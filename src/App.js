@@ -12,7 +12,7 @@ const [userDataState, setUserDataState] = useState({});
   return (
     <div className="App">
       <TopSection
-      isContainerDark = {(colorContainer)=>setIsContainerDark(colorContainer)}
+      //isContainerDark = {(colorContainer)=>setIsContainerDark(colorContainer)}
       />
       <MidSection 
       //sendUserData is a function 
