@@ -7,7 +7,7 @@ import { useState } from 'react';
 function App() {
 
 const [userDataState, setUserDataState] = useState({}); 
-const [isContainerDark, setIsContainerDark] = useState();
+//const [isContainerDark, setIsContainerDark] = useState();
 
   return (
     <div className="App">
