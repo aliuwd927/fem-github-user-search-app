@@ -7,19 +7,24 @@ import { useState } from 'react';
 function App() {
 
 const [userDataState, setUserDataState] = useState({}); 
-//const [isContainerDark, setIsContainerDark] = useState();
+const [isContainerDark, setIsContainerDark] = useState(false);
+
+let appContainer = isContainerDark ? `appContainerDark` :  `appContainerLight`;
+console.log(isContainerDark)
+
 
   return (
-    <div className="App">
+    <div className={appContainer}>
       <TopSection
-      //isContainerDark = {(colorContainer)=>setIsContainerDark(colorContainer)}
+      darkContainer = {(colorContainer)=>setIsContainerDark(colorContainer)}
       />
+      
       <MidSection 
       //sendUserData is a function 
       //TREAT THIS LIKE A STANDARD FUNC THAT CAN ACCEPT AND ARG...NVR FORGET...PLS...
-      sendUserData = {(parameter)=>setUserDataState(parameter)}
-      //if isContianer = true, render dark
-      />
+      sendUserData = {(parameter)=>setUserDataState(parameter)}/>
+ 
+      
      
       <BottomSection 
       //TREAT THIS LIKE KEY PAIR VALUES

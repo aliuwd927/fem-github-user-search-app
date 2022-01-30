@@ -4,7 +4,9 @@ import LightThemeImg from './assets/icon-sun.svg';
 import {useState} from 'react';
 
 
-function TopSection(updateContainer){
+function TopSection({darkContainer}){
+
+ 
 
   const [isDark, setisDark] = useState(false);
 
@@ -15,9 +17,10 @@ function TopSection(updateContainer){
 
 
 function handleBackgroundChange(e){
+  //e is left for testing
   //toggle between dark and light state
-  !isDark ? setisDark(true): setisDark(false); 
-  console.log(updateContainer);
+  setisDark(!isDark);
+  darkContainer(!isDark);
 }
 
 

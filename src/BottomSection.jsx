@@ -40,21 +40,22 @@ function BottomSection({userData}){
         <p>This Profile has no bio</p>
       </div>
 
-      <div className="UserProfile_RepoFollow">
-        <div className='RepoContainer'>
-          <h5>Repos</h5>
-          <h3>8</h3>
-        </div>
-        <div className='FollowerContainer'>
-          <h5>Followers</h5>
-          <h3>3938</h3>
-        </div>
-        <div className="FollowingContainer">
-          <h5>Following</h5>
-          <h3>9</h3>
-        </div>
+      <div className="innerBtm">
+        <div className="UserProfile_RepoFollow">
+          <div className='RepoContainer'>
+            <h5>Repos</h5>
+            <h3>8</h3>
+          </div>
+          <div className='FollowerContainer'>
+            <h5>Followers</h5>
+            <h3>3938</h3>
+          </div>
+          <div className="FollowingContainer">
+            <h5>Following</h5>
+            <h3>9</h3>
+          </div>
       </div>
-
+      </div>
       <div className="UserProfile_LocationSocialMedia_Container">
        <div className="UserProfile_LocationSocialMedia_Left">
          <div className="UserProfile_LocationSocialMedia_Location">
@@ -98,20 +99,23 @@ function BottomSection({userData}){
         <p>{userData.bio}</p>
       </div>
 
-      <div className="UserProfile_RepoFollow">
-        <div className='RepoContainer'>
-          <h5>Repos</h5>
-          <h3>{userData.public_repos}</h3>
-        </div>
-        <div className='FollowerContainer'>
-          <h5>Followers</h5>
-          <h3>{userData.followers}</h3>
-        </div>
-        <div className="FollowingContainer">
-          <h5>Following</h5>
-          <h3>{userData.following}</h3>
+      <div className="innerBtm">
+       <div className="UserProfile_RepoFollow">
+          <div className='RepoContainer'>
+           <h5>Repos</h5>
+            <h3>{userData.public_repos}</h3>
+         </div>
+          <div className='FollowerContainer'>
+            <h5>Followers</h5>
+            <h3>{userData.followers}</h3>
+          </div>
+          <div className="FollowingContainer">
+            <h5>Following</h5>
+            <h3>{userData.following}</h3>
+          </div>
         </div>
       </div>
+
 
       <div className="UserProfile_LocationSocialMedia_Container">
        <div className="UserProfile_LocationSocialMedia_Left">
@@ -149,7 +153,7 @@ function BottomSection({userData}){
 
 
 
-  
+
   return(
     <div className="BottomSection">
     {/*LEFT SIDE */}
